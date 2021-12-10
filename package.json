@@ -1,0 +1,44 @@
+{
+  "name": "boiler",
+  "main": "./main.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "client": "webpack --mode development --watch",
+    "client:build": "webpack --mode development",
+    "server": "nodemon --experimental-specifier-resolution=node main.js"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@json-rpc-tools/utils": "^1.7.6",
+    "@walletconnect/client": "^1.6.6",
+    "algorand-walletconnect-qrcode-modal": "^1.6.1",
+    "algosdk": "^1.12.0",
+    "aphrodite": "^2.4.0",
+    "buffer": "^6.0.3",
+    "classnames": "^2.3.1",
+    "crypto-browserify": "^3.12.0",
+    "fastify": "^3.22.1",
+    "fastify-static": "^4.4.2",
+    "https-browserify": "^1.0.0",
+    "process": "^0.11.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tslib": "^2.3.1",
+    "url": "^0.11.0"
+  }
+}
